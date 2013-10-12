@@ -61,8 +61,9 @@ void Corpus::read_data(const char* data_filename, int OFFSET) {
   while ((fscanf(fileptr, "%10d", &length) != EOF)) {
     Document * doc = new Document(length);
     for (n = 0; n < length; ++n) {
-//ren      fscanf(fileptr, "%10d:%10d", &word, &count);
-      fscanf(fileptr, "%10d %10d", &word, &count);
+      fscanf(fileptr, "%10d:%10d", &word, &count);
+      //ren
+      //fscanf(fileptr, "%10d %10d", &word, &count);
       word = word - OFFSET;
       doc->words_[n] = word;
       doc->counts_[n] = count;

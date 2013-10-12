@@ -145,4 +145,6 @@ Then
     make linux linux-d
 
 
+    ./hdp --verbose --train_data /home/richarde/public/corpora/pubmed_abstracts_100k.ldac-txtbag --directory train_dir
+
 
