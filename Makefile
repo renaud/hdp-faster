@@ -4,8 +4,12 @@ CC = g++ -Wall -g -O0
 # CFLAGS = -g -Wall
 LDFLAGS = -lgsl -lm -lgslcblas #-latlas
 
-GSL_INCLUDE = /u/chongw/libs/gsl/include
-GSL_LIB = /u/chongw/libs/gsl/lib
+#GSL_INCLUDE = /u/chongw/libs/gsl/include
+#GSL_LIB = /u/chongw/libs/gsl/lib
+
+#vizcluster
+GSL_INCLUDE = /home/richarde/public/include
+GSL_LIB = /home/richarde/public/lib
 
 #GSL_INCLUDE_MAC = /opt/local/include/
 #GSL_LIB_MAC = /opt/local/lib/
