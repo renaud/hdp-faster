@@ -1,4 +1,4 @@
-CC = g++ -Wall
+CC = g++ -Wall -g -O0
 #CC = g++ -ansi -Wall -pedantic
 #CFLAGS = -g -Wall -O3 -ffast-math -DHAVE_INLINE -DGSL_RANGE_CHECK_OFF
 # CFLAGS = -g -Wall
@@ -28,6 +28,7 @@ linux: $(LSOURCE) $(HEADER)
 linux-d: $(LSOURCE) $(HEADER)
 	  $(CC) -g -I$(GSL_INCLUDE) -L$(GSL_LIB) $(LSOURCE) -o hdp $(LDFLAGS)
 
+all: mac mac-d
 
 clean:
 	-rm hdp
